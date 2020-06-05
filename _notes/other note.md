@@ -2,7 +2,7 @@
 tags: other
 ---
 
-This is another note, see [[sample note]].
+This is another note, see [[Sample note]].
 
 {:.serif .medium}
 > "Be bored with a book, not with the act of reading"<br/>
