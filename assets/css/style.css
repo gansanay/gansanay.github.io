@@ -9,6 +9,8 @@ layout: stylesheet
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "/assets/css/highlight.css";
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Containers: Body, Container, Box, Main, Header, Content */ 
 
 html {
@@ -1390,4 +1392,69 @@ label.margin-toggle:not(.sidenote-number) {
 #disqus_thread {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+
+
+/* OVERRIDES */
+
+/* VARIABLES */
+:root {
+    --page-width: 616px;
+    
+    --header-font: "Crimson Text", serif;
+    --body-font: "Crimson Text", serif;
+    
+    --bg-color: #f5f1e2;
+    --page-color: rgba(236, 231, 209, .95);
+    
+    --text-color: #000000;
+    --icon-color: #5c7080; /* #5c7080 */
+    --bullet-color: rgba(0, 0, 0, 0.2);
+    
+    --page-shadow: 0px 8px 14px rgba(0, 0, 0, 0.02);
+    --color-primary: 181, 124, 38;
+    --color-primary-contrast: #FFFFFF;
+    --color-secondary: 100, 181, 38;
+    /*--color-secondary: 255, 165, 0;*/
+    --color-secondary-contrast: #FFFFFF;
+}
+
+:root {
+    --page-width: 616px;
+}
+
+html, body, .roam-app {
+    background-color: var(--bg-color) !important;
+    overflow: hidden !important;
+}
+
+/* hide scrollbars */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+/* hide scrollbars */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+h1, h2, h3,  h4, h5, h6, h1 > a, h2 > a, h3 > a, h4 > a, .rm-title-textarea {
+    font-family: var(--header-font) !important;
+    color: var(--text-color) !important;
+}
+
+h1.level2, h1.level2 > a, h2.level2 > a {
+    font-size: 26px !important;
+    font-weight: bold !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+}
+
+div,
+textarea, a {
+    font-family: var(--body-font) !important;
+    color: var(--text-color) !important;
 }
