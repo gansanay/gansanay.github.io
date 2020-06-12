@@ -721,7 +721,7 @@ hr {
 }
 
 .back-icon {
-    background-color: white;
+    background-color: var(--bg-color) !important;
     fill: currentColor;
     color: #555555;
     margin-top: 5px;
