@@ -167,7 +167,7 @@ cite a {
     font-size: inherit;
     font-family: inherit;
     /* color: inherit; */
-    color: var(--color-primary) !important;
+    color: var(rgb(--color-primary)) !important;
     font-weight: bold;
 }
 
