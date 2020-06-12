@@ -99,7 +99,8 @@ header {
 
 main {
     min-height: 300px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    padding-left: 20px;
     padding-right: 10px;
     background-color: var(--page-color) !important;
 }
@@ -132,14 +133,18 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #555555;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 600;
+    /* color: #555555; */
+    color: var(--text-color) !important;
+    font-family: var(--header-font) !important;
+    /* font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+    /* font-weight: 600; */
 }  
 
 a, p, ul, li, ol, table, span, blockquote {
-    color: #555555;
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* color: #555555; */
+    color: var(--text-color) !important;
+    /* font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;*/
+    font-family: var(--body-font) !important;
     font-size: 16px;  /* Let's set the font-size to something old-man friendly */
 }
 
