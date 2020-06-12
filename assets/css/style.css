@@ -166,9 +166,14 @@ blockquote a,
 cite a {
     font-size: inherit;
     font-family: inherit;
-    /* color: inherit; */
-    color: var(rgb(--color-primary)) !important;
+    color: inherit;
+    /* color: var(rgb(--color-primary)) !important; */
     /* font-weight: bold; */
+}
+
+.content p a {
+    color: var(rgb(--color-primary)) !important;
+    font-weight: bold;
 }
 
 ul ul {
