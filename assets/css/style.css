@@ -172,7 +172,7 @@ cite a {
 }
 
 .content p a {
-    color: var(rgb(--color-primary)) !important;
+    color: rgb(var(--color-primary)) !important;
     font-weight: bold;
 }
 
