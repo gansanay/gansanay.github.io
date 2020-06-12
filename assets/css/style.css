@@ -166,7 +166,8 @@ blockquote a,
 cite a {
     font-size: inherit;
     font-family: inherit;
-    color: inherit;
+    /* color: inherit; */
+    color: var(--color-primary) !important;
 }
 
 ul ul {
