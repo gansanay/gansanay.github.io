@@ -13,6 +13,11 @@ layout: stylesheet
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Containers: Body, Container, Box, Main, Header, Content */ 
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 /* VARIABLES */
 :root {
     --page-width: 616px;
