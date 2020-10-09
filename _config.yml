@@ -1,43 +1,27 @@
-title: gansanay:WIP
-name: Guillaume Ansanay-Alex
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://gansanay.com/" # the base hostname & protocol for your site, e.g. http://example.com
-encoding: utf-8
-
-# Build settings
-theme: null
-plugins:
-  - jekyll-feed 
-  - jekyll-sitemap 
-
+baseurl: /tufte-jekyll
+title: Tufte-Jekyll
+subtitle: Content-centric blogging
+author: clay harmon
+simple_search: http://google.com/search
+description: A Jekyll theme for content-rich sites
+name: tufte
 markdown: kramdown
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: mathjax
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
-
-sass:
-  style: compressed
-
-collections:
-    notes:
-      output: true
-      permalink: /notes/:title
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      permalink: /posts/:title
-      content-type: post
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: post
-      content-type: notes
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink: /articles/:short_year/:title
+timezone: America/New_York
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/clayh53.github.com/
