@@ -1,0 +1,135 @@
+---
+# Only the main Sass file needs front matter (the dashes)
+---
+
+/* --- IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Public+Sans:wght@700;800&display=swap');
+
+/* --- VARIABLES --- */
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #1C1C1E; /* Deep charcoal, softer than pure black */
+    --accent-color: #00DB35; /* Electric Green, slightly darkened for better contrast on white */
+    --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: 'Merriweather', Georgia, Cambria, "Times New Roman", Times, serif;
+    --content-width: 680px;
+}
+
+/* --- BASE STYLES --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-serif);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* --- LAYOUT CONTAINER (RESPONSIVE) --- */
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 4rem 1.5rem; /* wider padding on mobile, more vertical space */
+    
+    @media (max-width: 600px) {
+        padding: 2rem 1rem;
+    }
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* --- HOMEPAGE POST LIST --- */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    margin-bottom: 4rem; /* Ample whitespace between posts */
+}
+
+.post-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    
+    a {
+        color: var(--text-color);
+         &:hover {
+            color: var(--accent-color);
+        }
+    }
+     @media (max-width: 600px) {
+        font-size: 1.75rem;
+    }
+}
+
+.post-excerpt {
+    font-size: 1.1rem;
+    color: #4a4a4a; /* Slightly lighter gray for body text */
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+     /* Optional: Add the little cursor blob from the image */
+    &::after {
+        content: " \25B6"; /* Simple arrow, replace with SVG if preferred */
+        font-size: 0.8em;
+    }
+}
+
+/* --- SINGLE POST VIEW --- */
+.post-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.post-meta {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.post-content {
+    font-size: 1.15rem;
+    
+    p {
+        margin-bottom: 1.5em;
+    }
+}

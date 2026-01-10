@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="post-item">
+      <h2 class="post-title">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="post-excerpt">
+        {{ post.excerpt }}
+      </div>
+      <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+    </li>
+  {% endfor %}
+</ul>

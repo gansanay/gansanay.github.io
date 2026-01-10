@@ -1,0 +1,8 @@
+title: The Signal Processor # Used for SEO/browser tabs, but not displayed on page
+description: High signal operational insights.
+url: "https://gansanay.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
