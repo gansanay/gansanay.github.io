@@ -12,7 +12,15 @@
 
   <main class="page-content" aria-label="Content">
     <div class="container">
+      
+      <header class="site-nav">
+        <a href="{{ "/" | prepend: site.baseurl }}" class="nav-brand">~gansanay</a>
+        {% if site.linkedin_url %}
+          <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+        {% endif %}
+      </header>
       {{ content }}
+      
     </div>
   </main>
 
