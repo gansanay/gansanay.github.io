@@ -2,6 +2,7 @@ title: The Signal Processor # Used for SEO/browser tabs, but not displayed on pa
 description: High signal operational insights.
 url: "https://gansanay.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+linkedin_url: "https://www.linkedin.com/in/gansanay/"
 
 # Build settings
 markdown: kramdown
