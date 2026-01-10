@@ -133,3 +133,30 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 1.5em;
     }
 }
+
+/* --- DISCRETE HEADER --- */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem; /* Space between header and first post */
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.85rem; /* Small and discrete */
+    color: #a0a0a0; /* Muted gray */
+}
+
+.nav-brand {
+    font-weight: normal;
+    color: #a0a0a0;
+}
+
+.nav-link {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+        color: var(--accent-color); /* Turns Electric Green on hover */
+        cursor: pointer;
+    }
+}
